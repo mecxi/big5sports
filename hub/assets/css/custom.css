@@ -1,0 +1,91 @@
+/* big5sports hub */
+
+/* hide target columns logs */
+#logs .table-wrapper table tr td:nth-child(6),
+#logs .table-wrapper table tr td:nth-child(7),
+#logs .table-wrapper table tr td:nth-child(8),
+#logs .table-wrapper table tr td:nth-child(9),
+#logs .table-wrapper table tr th:nth-child(6),
+#logs .table-wrapper table tr th:nth-child(7),
+#logs .table-wrapper table tr th:nth-child(8),
+#logs .table-wrapper table tr th:nth-child(9){
+    display: none;
+}
+
+/* remove text-decoration in results */
+#results table tr td a {
+   color: #7f888f;
+   text-decoration: none !important;
+    border-bottom-color: transparent !important;
+}
+
+/* hide target columns in results */
+#results .table-wrapper table tr td:nth-child(4),
+#results .table-wrapper table tr th:nth-child(4) {
+    display: none;
+}
+
+/* style pub_date */
+.posts article i {
+    font-size: 0.75em !important;
+}
+
+.posts article div.news_header {
+    /*outline: 1px dashed blue !important;*/
+}
+.posts article div.news_header span:nth-child(1){
+    font-weight: bold !important;
+}
+.posts article div.news_header span:nth-child(3){
+    color: #f67878 !important;
+    font-weight: bold !important;
+}
+.posts article div.news_desc {
+    clear: both !important;
+    /*outline: 1px dashed red;*/
+}
+
+.posts article div.referral {
+    /*outline: 1px dashed red;*/
+}
+
+/* loader */
+#loader {
+    z-index: 100000000000;
+    /*outline: 1px dashed red;*/
+    background-image: url('../images/owl_loader.gif');
+    background-size:50px 50px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display:none;
+}
+
+/* custom notify */
+[data-notify="container"][class*="alert-pastel-"] {
+    background-color: rgb(255, 255, 238);
+    border-width: 0;
+    border-left: 5px solid #f56a6a;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(51, 51, 51, 0.3);
+    letter-spacing: 1px;
+}
+[data-notify="container"].alert-pastel-info {
+    border-left-color: rgb(255, 179, 40);
+}
+[data-notify="container"].alert-pastel-danger {
+    border-left-color: rgb(255, 103, 76);
+}
+[data-notify="container"][class*="alert-pastel-"] > [data-notify="title"] {
+    color: rgb(80, 80, 57);
+    display: block;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+[data-notify="container"][class*="alert-pastel-"] > [data-notify="message"] {
+    font-weight: 400;
+}
+
